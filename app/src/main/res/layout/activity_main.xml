@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    tools:ignore="VisualLintBounds">
+
+    <!-- Principal Amount -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        tools:ignore="ExtraText">
+
+        <!-- Custom text color -->
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/principal_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Principal Amount"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <EditText
+            android:id="@+id/principal_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_edittext_bg"
+            android:hint="Enter principal amount"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,DuplicateSpeakableTextCheck" />
+    </LinearLayout>
+
+    <!-- Interest Rate -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/interest_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Interest Rate"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            tools:ignore="HardcodedText" /> <!-- Custom text color -->
+        android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/interest_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_edittext_bg"
+            android:hint="Enter principal amount"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" /> <!-- Custom background -->
+        android:padding="10dp"
+        android:textColor="#000000" <!-- Custom text color -->
+        android:textSize="16sp"/>
+    </LinearLayout>
+
+    <!-- Time Period -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/time_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time Period (yrs)"
+            android:textSize="15sp"
+            android:textColor="#333333"
+            tools:ignore="HardcodedText,VisualLintBounds" /> <!-- Custom text color -->
+        android:gravity="center_vertical"/>
+
+        <EditText
+            android:id="@+id/time_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_edittext_bg"
+            android:hint="Enter principal amount"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" /> />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        tools:ignore="ExtraText">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Compounding Frequency"
+            tools:ignore="HardcodedText,InefficientWeight,TextSizeCheck" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="VisualLintBounds">
+
+        <AutoCompleteTextView
+            android:id="@+id/cpdFreq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:text="Annually"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck,TouchTargetSizeCheck,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        tools:ignore="ExtraText">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="Simple Interest"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText,RtlHardcoded,TextSizeCheck,TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Calculate"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText,VisualLintBounds" /> <!-- Custom text color -->
+            android:background="@drawable/custom_button_bg" <!-- Custom button background -->
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:importantForAutofill="no"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        tools:ignore="ExtraText,VisualLintBounds">
+
+        <!-- Custom text color -->
+        android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/total_amount_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Amount"
+            android:textColor="#333333"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,VisualLintBounds" />
+
+        <EditText
+            android:id="@+id/total_amount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/custom_edittext_bg"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,TextContrastCheck,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize,DuplicateSpeakableTextCheck,SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<!-- custom_edittext_bg.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background shape -->
+    <item>
+        <shape android:shape="rectangle">
+            <!-- Customize the background color -->
+            <solid android:color="#F0F0F0" /> <!-- Light gray, adjust as needed -->
+            <!-- Customize the corner radius -->
+            <corners android:radius="8dp" /> <!-- Adjust the radius as desired -->
+        </shape>
+    </item>
+    <!-- Add a border (optional) -->
+    <item android:left="1dp" android:right="1dp" android:top="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <!-- Customize the border color -->
+            <stroke android:color="#CCCCCC" android:width="1dp" /> <!-- Light gray, adjust as needed -->
+            <!-- Customize the corner radius (same as above) -->
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+</layer-list>

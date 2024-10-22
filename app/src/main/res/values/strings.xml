@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Interest Calculator</string>
+    <string name="select">select</string>
+    <string-array name="interestType">
+        <item>Simple Interest</item>
+        <item>Compound Interest</item>
+    </string-array>
+
+    <string-array name="compoundingFreq">
+        <item>Annually</item>
+        <item>Semi-Annually</item>
+        <item>Quarterly</item>
+        <item>Monthly</item>
+        <item>Weekly</item>
+        <item>Daily</item>
+    </string-array>
+</resources>
